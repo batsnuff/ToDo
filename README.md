@@ -19,8 +19,8 @@ Witaj w aplikacji **ToDo**! Ta prosta aplikacja internetowa pomoże Ci zarządza
 
 ## Zrzuty Ekranu
 
-![Zrzut ekranu](../images/1)
-![Zrzut ekranu](../images/2)
+![Zrzut ekranu 1](./images/1.png)
+![Zrzut ekranu 2](./images/2.png)
 
 
 ## Współpraca

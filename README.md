@@ -29,6 +29,6 @@ Chętnie przyjmiemy Twoje sugestie i poprawki! Jeśli zauważysz jakieś problem
 
 
 ## Autor
-[**Milosz Szczepaniak**]
+**Milosz Szczepaniak**
 
 

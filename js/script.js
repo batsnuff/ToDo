@@ -41,7 +41,7 @@
       tasksListContent += `
               <li class="tasks__item js__task">
               <button class="tasks__button tasks__button--done js-done">${task.done ? "✓" : ""}</button>
-              <span class="tasks__content${ task.done ? "tasks__content--done" : ""}">${task.content}</span>
+              <span class="tasks__content${ task.done ? " tasks__content--done" : ""}">${task.content}</span>
               <button class="tasks__button tasks__button--remove js-remove">🗑️</button>
               </li>
           `;

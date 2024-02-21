@@ -1,35 +1,34 @@
-# ToDo Web App
+# Aplikacja ToDo
 
-## Opis
-Prosta aplikacja webowa ToDo, która umożliwia dodawanie nowych zadań do listy oraz śledzenie postępu.
+Witaj w aplikacji **ToDo**! Ta prosta aplikacja internetowa pomoże Ci zarządzać swoimi zadaniami i utrzymać porządek. Niezależnie od tego, czy jesteś studentem, profesjonalistą, czy po prostu osobą, która chce śledzić codzienne obowiązki, ta aplikacja jest dla Ciebie.
 
 ## Funkcje
 
-- Dodawanie nowych zadań do listy
-- Wyświetlanie listy zadań
-- Podstawowe statystyki dotyczące ilości zadań
+- Dodawanie nowych zadań.
+- Oznaczanie zadań jako ukończone.
+- Filtracja zadań według statusu (ukończone lub oczekujące).
+- Usuwanie ukończonych zadań.
+- Projekt responsywny dostosowany do komputerów i urządzeń mobilnych.
 
-## Struktura projektu:
-|-- index.html
-|-- css/
-| |-- style.css
-| |-- normalize.css
-| |-- container.css
-| |-- section.css
-| |-- form.css
-| |-- tasks.css
-|-- js/
-| |-- script.js
-|-- README.md
+## Wykorzystane Technologie
 
-## Instrukcje uruchomienia
-1.Pobierz pliki z tego repozytorium.
-2.Uruchom plik index.html w dowolnej wspieranej przeglądarce internetowej.
-## Zależności
-Brak zewnętrznych zależności. Projekt korzysta tylko z podstawowych technologii webowych.
+- JavaScript
+- HTML
+- CSS
+
+
+## Zrzuty Ekranu
+
+![Zrzut ekranu](../images/1)
+![Zrzut ekranu](../images/2)
+
+
+## Współpraca
+
+Chętnie przyjmiemy Twoje sugestie i poprawki! Jeśli zauważysz jakieś problemy lub masz pomysły na ulepszenia, śmiało twórz pull requesty.
+
 
 ## Autor
-[Twoje Imię/Nazwa]
+[**Milosz Szczepaniak**]
 
-## Kontakt
-Jeśli masz pytania lub uwagi, skontaktuj się ze mną poprzez [wpisz adres e-mail lub inne informacje kontaktowe].
+

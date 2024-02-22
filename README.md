@@ -23,6 +23,9 @@ Witaj w aplikacji **ToDo**! Ta prosta aplikacja internetowa pomoże Ci zarządza
 ![Zrzut ekranu 2](./images/2.png)
 ![DEMO](./images/Animation.gif)
 
+## Uruchomienie strony
+
+Aby uruchomić ToDoAppke możesz odwiedzić moją stronę internetową, która jest dostępna pod adresem: [link](https://batsnuff.github.io/ToDo/)
 
 ## Współpraca
 

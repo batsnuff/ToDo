@@ -17,10 +17,11 @@ Witaj w aplikacji **ToDo**! Ta prosta aplikacja internetowa pomoże Ci zarządza
 - CSS
 
 
-## Zrzuty Ekranu
+## Zrzuty Ekranu i Demo
 
 ![Zrzut ekranu 1](./images/1.png)
 ![Zrzut ekranu 2](./images/2.png)
+![DEMO](./images/Animation.gif)
 
 
 ## Współpraca

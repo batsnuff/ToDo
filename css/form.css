@@ -17,15 +17,23 @@
 
 .form__button {
   padding: 10px;
+  margin-right: 34px;
   background: #008080;
   color: white;
   border: none;
+  transition: transform 2s ease, scale 2s ease;
+  position: relative;
 }
 
 .form__button:hover {
-  background: #00b3b3;
+  transform: translateY(-20px) scale(1.4);
 }
 
 .form__button:active {
-  background: #00e6e6;
+  animation: button-flash 0.3s ease 3;
+}
+
+@keyframes button-flash {
+  0%, 100% { background: #ff0000; }
+  50% { background: white; }
 }

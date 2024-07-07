@@ -1,0 +1,15 @@
+{
+    "configurations": [
+        {
+            "type": "browser",
+            "name": "Browser configuration",
+            "url": "",  
+        },
+        {
+            "type": "mocha",
+            "name": "Mocha configuration",
+            "file": "",
+        },
+        
+    ]
+}

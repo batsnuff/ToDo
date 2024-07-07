@@ -23,6 +23,7 @@
   width: 30px;
   height: 30px;
   padding: 0;
+  transition: background 0.2s ease, transform 0.1s ease;
 }
 
 .tasks__button--done {
@@ -31,10 +32,13 @@
 
 .tasks__button--done:hover {
   background: #20b120;
+  transform: scale(1.2);
 }
 
 .tasks__button--done:active {
   background: #2cd82c;
+  transform: scale(0.9);
+  box-shadow: 0 0 8px red;
 }
 
 .tasks__button--remove {
@@ -43,8 +47,11 @@
 
 .tasks__button--remove:hover {
   background: #e0153d;
+  transform: scale(1.2);
 }
 
 .tasks__button--remove:active {
   background: #ed3b5f;
+  transform: scale(0.9);
+  box-shadow: 0 0 8px green;
 }

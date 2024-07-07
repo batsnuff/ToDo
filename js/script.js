@@ -79,14 +79,23 @@ const renderStats = () => {
   statsContainer.classList.add("stats-style");
 };
 
-const updateToggleCompletedTasksButton = () => {
+const updateToggleButtonsVisibility = () => {
   const toggleCompletedTasksButton = document.querySelector(".js-toggle-completed-tasks");
-  const allDone = tasks.length > 0 && tasks.every(task => task.done);
+  const toggleAllButton = document.getElementById("toggleAllButton");
+    document.getElementById("toggleButton");
+    const hasTasks = tasks.length > 0;
+  const hasCompletedTasks = tasks.some(task => task.done);
 
-  if (allDone) {
+  if (!hasTasks || !hasCompletedTasks) {
     toggleCompletedTasksButton.style.display = "none";
   } else {
     toggleCompletedTasksButton.style.display = "inline-block";
+  }
+
+  if (hasTasks) {
+    toggleAllButton.style.display = "inline-block";
+  } else {
+    toggleAllButton.style.display = "none";
   }
 };
 
@@ -94,7 +103,7 @@ const render = () => {
   bindEvents();
   renderTask();
   renderStats();
-  updateToggleCompletedTasksButton();
+  updateToggleButtonsVisibility();
 };
 
 const onFormSubmit = (event) => {
@@ -118,22 +127,25 @@ const init = () => {
   form.addEventListener("submit", onFormSubmit);
 
   const toggleCompletedButton = document.getElementById("toggleButton");
+  const toggleAllButton = document.getElementById("toggleAllButton");
 
   toggleCompletedButton.addEventListener("click", () => {
-    if (toggleCompletedButton.innerText === "Pokaż ukończone") {
-      toggleCompletedButton.innerText = "Ukryj ukończone";
-    } else {
-      toggleCompletedButton.innerText = "Pokaż ukończone";
+    if (tasks.some(task => task.done)) {
+      if (toggleCompletedButton.innerText === "Ukryj ukończone") {
+        toggleCompletedButton.innerText = "Pokaż ukończone";
+      } else {
+        toggleCompletedButton.innerText = "Ukryj ukończone";
+      }
     }
   });
 
-  const toggleAllButton = document.getElementById("toggleAllButton");
-
   toggleAllButton.addEventListener("click", () => {
-    if (toggleAllButton.innerText === "Zaznacz wszystkie") {
-      toggleAllButton.innerText = "Odznacz wszystkie";
-    } else {
-      toggleAllButton.innerText = "Zaznacz wszystkie";
+    if (tasks.length > 0) {
+      if (toggleAllButton.innerText === "Zaznacz wszystkie") {
+        toggleAllButton.innerText = "Odznacz wszystkie";
+      } else {
+        toggleAllButton.innerText = "Zaznacz wszystkie";
+      }
     }
   });
 };

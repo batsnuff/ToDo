@@ -115,8 +115,27 @@ const init = () => {
   render();
 
   const form = document.querySelector(".js-form");
-
   form.addEventListener("submit", onFormSubmit);
+
+  const toggleCompletedButton = document.getElementById("toggleButton");
+
+  toggleCompletedButton.addEventListener("click", () => {
+    if (toggleCompletedButton.innerText === "Pokaż ukończone") {
+      toggleCompletedButton.innerText = "Ukryj ukończone";
+    } else {
+      toggleCompletedButton.innerText = "Pokaż ukończone";
+    }
+  });
+
+  const toggleAllButton = document.getElementById("toggleAllButton");
+
+  toggleAllButton.addEventListener("click", () => {
+    if (toggleAllButton.innerText === "Zaznacz wszystkie") {
+      toggleAllButton.innerText = "Odznacz wszystkie";
+    } else {
+      toggleAllButton.innerText = "Zaznacz wszystkie";
+    }
+  });
 };
 
 init();
